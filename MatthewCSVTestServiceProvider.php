@@ -1,6 +1,6 @@
 <?php 
 
-namespace Tritility\MatthewCSVTest;
+namespace TritilityTest\MatthewCSVTest;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class MatthewCSVTestServiceProvider extends ServiceProvider {
    public function register() {
       //Register package routes
       include __DIR__.'/routes.php';
-      $this->app->make('Tritility\MatthewCSVTest\MatthewCSVTestController'); 
+      $this->app->make('TritilityTest\MatthewCSVTest\MatthewCSVTestController'); 
   }
 
 }

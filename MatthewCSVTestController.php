@@ -1,8 +1,8 @@
 <?php 
 
-namespace Tritility\MatthewCSVTest;
+namespace TritilityTest\MatthewCSVTest;
 
-use Tritility\MatthewCSVTest\Imports\ClientsImport;
+use TritilityTest\MatthewCSVTest\Imports\ClientsImport;
 use App\Http\Controllers\Controller;
 
 class MatthewCSVTestController extends Controller {

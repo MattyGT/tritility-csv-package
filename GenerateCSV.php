@@ -1,6 +1,6 @@
 <?php
 
-namespace Tritility\MatthewCSVTest;
+namespace TritilityTest\MatthewCSVTest;
 
 use Illuminate\Console\Command;
 
@@ -38,7 +38,7 @@ class GenerateCSV extends Command
     public function handle()
     {
         $this->info('Generating CSV file....');
-        $csv = new \Tritility\MatthewCSVTest\MatthewCSVTestController();
+        $csv = new \TritilityTest\MatthewCSVTest\MatthewCSVTestController();
         $result = $csv->convertSpreadSheetContent();
         $this->info('Operation complete.');
     }

@@ -1,5 +1,5 @@
 {
-    "name": "tritility/matthewcsvtest",
+    "name": "tritilitytest/matthewcsvtest",
     "description": "package to convert spreadsheet into csv",
     "type": "project",
     "require-dev": {},

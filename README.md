@@ -4,6 +4,8 @@
 
 Install the package into Lumen.
 
-Register Service Provider: Add '$app->register(Tritility\MatthewCSVTest\MatthewCSVTestServiceProvider::class);' to 'bootstrap\app.php'
+Register Service Provider: Add '$app->register(TritilityTest\MatthewCSVTest\MatthewCSVTestServiceProvider::class);' to 'bootstrap\app.php'
 
 Once the package has been installed, please run the command 'php artisan GenerateCSV' in your console.
+
+# Vendor 'Tritility' was taken in Packagist to settled with 'TritilityTest'
