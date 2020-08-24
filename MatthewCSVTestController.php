@@ -15,6 +15,7 @@ class MatthewCSVTestController extends Controller {
   */
   public function convertSpreadSheetContent() { 
     $path = base_path('public') . "\\spreadsheets\\";
+    if ( !file_exists($path) ) { mkdir($path, 0777, true); }
     $spreadsheets = glob($path . "*.xls"); // Find all xls files in directory
     if ( is_array($spreadsheets) && count($spreadsheets) > 0 ) {
       foreach ( $spreadsheets as $x=>$v ) {  // loop through each found xls file

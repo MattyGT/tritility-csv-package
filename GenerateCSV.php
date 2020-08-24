@@ -38,8 +38,15 @@ class GenerateCSV extends Command
     public function handle()
     {
         $this->info('Generating CSV file....');
-        $csv = new \tritilitytest\matthewcsvtest\MatthewCSVTestController();
-        $result = $csv->convertSpreadSheetContent();
-        $this->info('Operation complete.');
+        $path = base_path('public') . "\\spreadsheets\\";
+        if ( !file_exists($path) ) { mkdir($path, 0777, true); }
+        $spreadsheets = glob($path . "*.xls"); // Find all xls files in directory
+        if ( is_array($spreadsheets) && count($spreadsheets) > 0 ) {
+            $csv = new \tritilitytest\matthewcsvtest\MatthewCSVTestController();
+            $result = $csv->convertSpreadSheetContent();
+            $this->info('Operation complete.');
+        } else {
+            $this->info('No xls files found in public/spreadsheets/.');
+        }
     }
 }
