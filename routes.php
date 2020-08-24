@@ -1,3 +1,3 @@
 <?php
 // Package router
-$this->app->router->get('csv', 'TritilityTest\MatthewCSVTest\MatthewCSVTestController@convertSpreadSheetContent');
+$this->app->router->get('csv', 'tritilitytest\matthewcsvtest\MatthewCSVTestController@convertSpreadSheetContent');
