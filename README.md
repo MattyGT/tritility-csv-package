@@ -4,7 +4,7 @@
 
 Install the package into Lumen.
 
-Add '"tritilitytest\\matthewcsvtest\\": "vendor/tritilitytest/matthewcsvtest"' to 'psr-4' attribute in root composer.json.
+Add '"tritilitytest\\\matthewcsvtest\\\": "vendor/tritilitytest/matthewcsvtest"' to 'psr-4' attribute in root composer.json.
 
 Register Service Provider: Add '$app->register(tritilitytest\matthewcsvtest\MatthewCSVTestServiceProvider::class);' to 'bootstrap\app.php'.
 
