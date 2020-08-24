@@ -16,4 +16,4 @@ Place xls files in the 'public/spreadsheets' folder to be converted.
 
 Once the above steps have been completed, please run the command 'php artisan GenerateCSV' in your console.
 
-# Vendor 'Tritility' was taken in Packagist to settled with 'TritilityTest'.
+# Vendor 'Tritility' was taken in Packagist so settled with 'TritilityTest'.
