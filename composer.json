@@ -1,7 +1,7 @@
 {
     "name": "tritilitytest/matthewcsvtest",
     "description": "package to convert spreadsheet into csv",
-    "type": "project",
+    "type": "library",
     "require-dev": {},
     "license": "MIT",
     "authors": [
